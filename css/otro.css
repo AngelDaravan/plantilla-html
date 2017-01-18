@@ -1,0 +1,121 @@
+a:hover{
+	background-color: #737373;
+}
+
+#barra_principal{
+	background-color: #f2f2f2;
+}
+
+#barra_movil{
+	background-color: #f2f2f2;
+	display: none;
+}
+
+#titulo #menu{
+	padding: 10px;
+}
+
+#menu{
+	font-family: 'Oswald', sans-serif;
+}
+/* Desactivamos el hover por defecto de W3.CSS para aplicar el nuestro propio*/
+#menu a:hover{
+	background-color: #f2f2f2;
+	border-bottom: solid;
+	border-bottom-color: #737373;
+}
+
+#menu a:active{
+	border-bottom: solid;
+	border-bottom-color: #737373;
+}
+
+/*El menu lateral solo lo mostraremos en los moviles*/
+#menu_lateral{
+	display: none;
+}
+
+#mi_nombre{
+	font-family: 'Bungee Shade', cursive;
+}
+
+#cuerpo{
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+
+#mi_titular{
+	font-family: 'Oswald', sans-serif;
+}
+
+#mi_titular a{
+	text-decoration: none;
+}
+
+#mi_titular a:hover{
+	background-color: #cccccc;
+}
+
+#mi_articulo{
+	padding-left: 20px;
+	padding-right: 10px;
+}
+
+#sidebar{
+	padding-left: 20px;
+	padding-right: 10px;
+}
+
+#mi_pie{
+	background-color: #404040;
+	color: #cccccc;
+	padding: 5px;
+	text-align: center;
+}
+/* Tabletas */
+@media screen and (max-width: 768px) {
+
+	#menu{
+		width: 70%;
+	}
+
+	#menu li{
+		font-size: 0.5em;
+	}
+
+	#menu_lateral{
+	display: none;
+}
+
+	#titulo{
+		width: 30%;
+	}
+
+	#mi_nombre{
+		font-size: 1em;
+	}
+}
+/* Moviles */
+@media screen and (max-width: 480px){
+	#barra_principal{
+		display: none;
+	}
+
+	#barra_movil{
+		display: block;
+	}
+
+	#menu{
+		display: none;
+	}
+
+	#menu_lateral{
+		display: block;
+		width: 25%;
+	}
+
+	#mi_nombre{
+		font-size: 0.8em;
+	}
+}
