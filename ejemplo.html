@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ÁNGEL DARAVÁN</title>
+	<meta charset="utf-8" />
+	<!-- Utilizo el framework W3.CSS -->
+	<link rel="stylesheet" type="text/css" href="css/w3.css">
+	<!-- Mi CSS -->
+	<link rel="stylesheet" type="text/css" href="css/otro.css">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
+	<!-- Diseño responsive -->
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+</head>
+<body>
+	<!-- Barra de navegación lateral, solo para dispositivos moviles -->
+	<nav class="w3-sidenav w3-card-2 w3-animate-left" style="display:none" id="menu_izquierda">
+		<a href="javascript:void(0)" onclick="cerrar_menu()"
+	  class="w3-closenav w3-large">&times; Cerrar</a>
+	  <a href="#">Inicio</a>
+	  <a href="#">¿Quién soy?</a>
+	  <a href="#">Proyectos</a>
+	  <a href="#">Blog</a>
+	</nav>
+<div id="barra_principal" class="w3-container w3-card-4 w3-top">
+<!-- El menú lo alineo a la izquierda. Cuando esté en un dispositivo móvil esta parte desaparece para convertirlo en un desplegable -->
+	<div id="menu" class="w3-col l8">
+		<ul class="w3-navbar w3-large">
+			<li><a href="#">Inicio</a></li>
+			<li><a href="#">¿Quién soy?</a></li>
+			<li><a href="#">Proyectos</a></li>
+			<li><a href="#">Blog</a></li>
+		</ul>
+	</div>
+	<div id="titulo" class="w3-col l4">
+		<h1 id="mi_nombre">ANGEL DARAVAN</h1>
+	</div>
+</div>
+<!-- Barra principal modificada para los moviles -->
+<div id="barra_movil" class="w3-container w3-card-4 w3-top">
+	<div id="menu_lateral" class="w3-col l3" onclick="abrir_menu()">
+		&#9776;
+	</div>
+	<div id="titulo" class="w3-col l9">
+		<h1 id="mi_nombre">ANGEL DARAVAN</h1>
+	</div>
+</div>
+
+	<div id="cuerpo" class="w3-container w3-card-8"> 
+		<div id="contenido" class="w3-col l9">
+			<h2 id="mi_titular"><a href="#">Este podría ser uno de los titulos de la página</a></h2>
+			<p id="mis_datos" class="w3-small">Escrito por: Ángel Daraván. Publicado en el: 11/01/2017 - 02:44. <a href="#">Sin comentarios</a></p>
+			<div id="mi_articulo" class="w3-border-bottom">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempus, risus vel placerat varius, neque eros efficitur ipsum, ac sagittis libero leo at nibh. Suspendisse potenti. Duis leo quam, volutpat ac magna sed, tristique posuere mi. Curabitur lacinia, mauris in semper facilisis, arcu est mollis turpis, a vehicula libero libero et ex. Maecenas id sapien sit amet risus placerat viverra. Phasellus neque enim, condimentum vel augue et, convallis imperdiet lectus. In interdum, neque ut iaculis pulvinar, eros nisi pulvinar tellus, id ornare velit felis at diam. Donec eu eros fringilla, semper mauris nec, commodo erat. Nulla mi metus, porta at eleifend vitae, sodales non tellus. Morbi in sodales justo. Phasellus tristique a orci a bibendum.</p>
+				<p>
+					Pellentesque tempor lacus id augue mollis, in consectetur tellus fringilla. Fusce ultricies pretium finibus. Curabitur in erat porttitor, gravida justo non, faucibus sapien. Sed eros turpis, accumsan sit amet mauris quis, tincidunt ullamcorper ante. Curabitur vel orci tincidunt, malesuada odio nec, tempus arcu. Vivamus vel faucibus massa. Proin vehicula sit amet ligula eget fringilla. Aenean a malesuada nulla. Nulla quis gravida felis. Suspendisse laoreet lectus vel placerat aliquam. Phasellus scelerisque vehicula rhoncus. Curabitur facilisis euismod rhoncus. 
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempus, risus vel placerat varius, neque eros efficitur ipsum, ac sagittis libero leo at nibh. Suspendisse potenti. Duis leo quam, volutpat ac magna sed, tristique posuere mi. Curabitur lacinia, mauris in semper facilisis, arcu est mollis turpis, a vehicula libero libero et ex. Maecenas id sapien sit amet risus placerat viverra. Phasellus neque enim, condimentum vel augue et, convallis imperdiet lectus. In interdum, neque ut iaculis pulvinar, eros nisi pulvinar tellus, id ornare velit felis at diam. Donec eu eros fringilla, semper mauris nec, commodo erat. Nulla mi metus, porta at eleifend vitae, sodales non tellus. Morbi in sodales justo. Phasellus tristique a orci a bibendum.</p>
+				<p>
+					Pellentesque tempor lacus id augue mollis, in consectetur tellus fringilla. Fusce ultricies pretium finibus. Curabitur in erat porttitor, gravida justo non, faucibus sapien. Sed eros turpis, accumsan sit amet mauris quis, tincidunt ullamcorper ante. Curabitur vel orci tincidunt, malesuada odio nec, tempus arcu. Vivamus vel faucibus massa. Proin vehicula sit amet ligula eget fringilla. Aenean a malesuada nulla. Nulla quis gravida felis. Suspendisse laoreet lectus vel placerat aliquam. Phasellus scelerisque vehicula rhoncus. Curabitur facilisis euismod rhoncus. 
+				</p>	
+			</div>	<!-- articulo -->
+		</div> <!-- contenido -->
+
+			<div id="sidebar" class="w3-col l3">
+			<h2 id="mi_titular">Mis enlaces</h2>
+			<ul>
+				<li><a href="#">Facebook</a></li>
+				<li><a href="#">Twitter</a></li>
+				<li><a href="#">Instagram</a></li>
+				<li><a href="#">Tumblr</a></li>
+			</ul>
+			<h2 id="mi_titular">Mas información</h2>
+			<p>
+				Pellentesque tempor lacus id augue mollis, in consectetur tellus fringilla. Fusce ultricies pretium finibus. Curabitur in erat porttitor, gravida justo non, faucibus sapien. Sed eros turpis, accumsan sit amet mauris quis, tincidunt ullamcorper ante. Curabitur vel orci tincidunt, malesuada odio nec, tempus arcu. Vivamus vel faucibus massa. Proin vehicula sit amet ligula eget fringilla. Aenean a malesuada nulla. Nulla quis gravida felis. Suspendisse laoreet lectus vel placerat aliquam. Phasellus scelerisque vehicula rhoncus. Curabitur facilisis euismod rhoncus. 
+			</p>
+			<p>
+				Pellentesque tempor lacus id augue mollis, in consectetur tellus fringilla. Fusce ultricies pretium finibus. Curabitur in erat porttitor, gravida justo non, faucibus sapien. Sed eros turpis, accumsan sit amet mauris quis, tincidunt ullamcorper ante. Curabitur vel orci tincidunt, malesuada odio nec, tempus arcu. Vivamus vel faucibus massa. Proin vehicula sit amet ligula eget fringilla. Aenean a malesuada nulla. Nulla quis gravida felis. Suspendisse laoreet lectus vel placerat aliquam. Phasellus scelerisque vehicula rhoncus. Curabitur facilisis euismod rhoncus. 
+			</p>
+
+			</div> <!-- sidebar -->
+	</div><!-- cuerpo -->
+
+	<div id="mi_pie" class="w3-container">
+		<p>Copyright Angel Daravan 2017. Todos los derechos reservados.</p>
+		<p>Aquí podemos meter más elementos, como por ejemplo el mapa web, una descripción de la web, enlaces a las redes sociales,...</p>
+	</div> <!-- pie -->
+	<!-- Script del menu lateral -->
+	<script>
+		function abrir_menu() {
+		document.getElementById("menu_izquierda").style.display = "block";
+	}
+
+	function cerrar_menu() {
+		document.getElementById("menu_izquierda").style.display = "none";
+	}
+	</script>
+</body>
+</html>
